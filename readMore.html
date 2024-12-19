@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Read More Details</title>
+  <link rel="icon" href="images/favicon-image.jpg">
+  <!-- External CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #121212;
+      color: #fff;
+    }
+
+    .navbar {
+      background-color: #000;
+    }
+
+    .navbar .nav-link {
+      color: #fff;
+      transition: color 0.3s ease;
+    }
+
+    .navbar .nav-link:hover,
+    .navbar .nav-link.active {
+      color: tomato; 
+    }
+
+    h1,
+    h2,
+    h3,
+    h5 {
+      color: #00b894;
+    }
+
+    p {
+      line-height: 1.8;
+      color: #d3d3d3;
+    }
+
+    .section-dark {
+      background-color: #1b1b1b;
+      padding: 50px 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .card {
+      background-color: #222;
+      color: #fff;
+    }
+
+    .footer {
+      background-color: #1f1f1f;
+      color: #ccc;
+      padding: 30px 0;
+    }
+
+    .footer a {
+      color: #00b894;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      color: #fff;
+    }
+
+    .btn-primary {
+      background-color: #00b894;
+      border-color: #00b894;
+    }
+
+    .btn-primary:hover {
+      background-color: #009270;
+      border-color: #009270;
+    }
+
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #00b894;
+      color: #fff;
+      border-radius: 50%;
+      padding: 10px 12px;
+      display: none;
+    }
+
+    .back-to-top:hover {
+      background-color: #009270;
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      .section-dark {
+        padding: 30px 10px;
+      }
+
+      .card h3 {
+        font-size: 1.1rem;
+      }
+
+      .navbar-brand img {
+        width: 80px;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/Logo-Image-removebg-preview.png" class="img-fluid" style="width: 150px; height: 75px;" alt="Logo">
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="product.html">Products</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="categoryDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Category</a>
+            <ul class="dropdown-menu" aria-labelledby="categoryDropdown">
+                <li><a class="dropdown-item" href="categoryOne.html">Disposable Vape 1</a></li>
+                <li><a class="dropdown-item" href="categoryTwo.html">Disposable Vape 2</a></li>
+                <li><a class="dropdown-item" href="categoryThree.html">Disposable Vape 3</a></ul>
+            </li>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+
+  <!-- Hero Section -->
+  <div class="container-fluid section-dark text-center mt-5">
+    <h1 class="fw-bold mt-5 pt-5">Discover More About Our Premium Vapes</h1>
+    <p class="lead">An exceptional vaping experience with innovative features and rich flavors.</p>
+  </div>
+
+  <!-- Detailed Section -->
+  <div class="container section-dark my-5">
+    <div class="row align-items-center">
+      <div class="col-lg-6 col-md-12 mb-4">
+        <img src="images/vape-9.jpg" class="img-fluid rounded" alt="Premium Vape">
+      </div>
+      <div class="col-lg-6 col-md-12">
+        <h2 class="fw-bold mb-4">Top-Quality Products</h2>
+        <p>
+          Our premium disposable vapes offer an easy, satisfying experience with no hassle of refilling. Whether you are
+          new or an expert vaper, we bring you the perfect solutions with a variety of vibrant flavors and smooth hits.
+        </p>
+        <p>
+          Designed with cutting-edge technology, our vapes ensure quality, longevity, and reliability.
+        </p>
+        <a href="product.html" class="btn btn-primary mt-3">Explore Products</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Benefits Section -->
+  <div class="container section-dark text-center mb-5">
+    <h2 class="fw-bold mb-4">Why Choose Us?</h2>
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="card border-0 p-3">
+          <h3>Wide Variety</h3>
+          <p>Explore a diverse range of flavors and products suited for every taste.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="card border-0 p-3">
+          <h3>Top-Notch Quality</h3>
+          <p>Every vape is tested for quality and designed for superior performance.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-12">
+        <div class="card border-0 p-3">
+          <h3>Customer Satisfaction</h3>
+          <p>E"Each vape is tested for quality, ensuring a smooth experience.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <p>&copy; 2024 RELX Vape Shop. All Rights Reserved.</p>
+      <p>
+        <a href="index.html">Home</a> | <a href="contact.html">Contact</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Back To Top Button -->
+  <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+  <!-- JS Links -->
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Back to top button
+    const backToTopButton = document.querySelector(".back-to-top");
+    window.addEventListener("scroll", () => {
+      if (window.pageYOffset > 100) {
+        backToTopButton.style.display = "block";
+      } else {
+        backToTopButton.style.display = "none";
+      }
+    });
+  </script>
+</body>
+
+</html>

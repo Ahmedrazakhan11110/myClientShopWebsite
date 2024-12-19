@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VapeShop - Premium Vapes & E-Liquids</title>
+    <link rel="icon" href="images/favicon-image.jpg">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+</head>
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #121212;
+        color: white;
+    }
+    .navbar {
+        background-color: #2c2c2c;
+    }
+    .navbar-nav .nav-link {
+        color: white;
+    }
+    .navbar-nav .nav-link:hover {
+        color: #ff6f61;
+    }
+    .header {
+        background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url('images/vape-banner.jpg') no-repeat center center/cover;
+        color: white;
+        padding: 100px 0;
+        text-align: center;
+    }
+    .header h1 {
+        font-size: 60px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    .header .breadcrumbs {
+        color: #ff6f61;
+        font-size: 18px;
+    }
+    .header .breadcrumbs a {
+        color: #ff6f61;
+        text-decoration: none;
+    }
+    .feature-item {
+        background-color: #333;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        transition: transform 0.3s ease;
+    }
+    .feature-item:hover {
+        transform: translateY(-10px);
+    }
+    .feature-item i {
+        font-size: 40px;
+        color: #ff6f61;
+    }
+    .feature-item h5 {
+        font-weight: bold;
+        color: white;
+    }
+    .feature-item p {
+        color: #e0e0e0;
+    }
+    .content {
+        margin-top: 50px;
+        color: #e0e0e0;
+    }
+    .content h5 {
+        font-size: 32px;
+        color: #ff6f61;
+    }
+    .content p {
+        font-size: 18px;
+        line-height: 1.8;
+    }
+    .content .readMoreButton {
+        background-color: #ff6f61;
+        color: white;
+        border: none;
+        padding: 12px 25px;
+        font-size: 18px;
+        transition: background-color 0.3s ease;
+    }
+    .content .readMoreButton:hover {
+        background-color: #e55b52;
+    }
+    .footer {
+        background-color: #1f1f1f;
+        color: #e0e0e0;
+        padding: 40px 0;
+    }
+    .footer a {
+        color: #ff6f61;
+        text-decoration: none;
+    }
+    .footer a:hover {
+        color: white;
+    }
+    .footer .social-icons a {
+        margin: 0 15px;
+        font-size: 20px;
+    }
+    .footer .social-icons a:hover {
+        color: #ff6f61;
+    }
+
+    /* Counter Section */
+    .counter {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+    }
+    .counter-item {
+        text-align: center;
+        font-size: 36px;
+        font-weight: bold;
+        color: #ff6f61;
+    }
+    .counter-item .number {
+        font-size: 60px;
+        color: white;
+    }
+    /* Vape of the Week Section */
+.vape-of-the-week {
+  background-color: #121212;
+  color: white;
+  padding: 50px 0;
+}
+
+.vape-of-the-week .card {
+  border-radius: 10px;
+}
+
+.vape-of-the-week .card-img-top {
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.vape-of-the-week .card-title {
+  font-size: 24px;
+  color: #ff6f61;
+}
+
+.vape-of-the-week .btn-warning {
+  background-color: #ff6f61;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.vape-of-the-week .btn-warning:hover {
+  background-color: #e55b52;
+}
+
+</style>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/Logo-Image-removebg-preview.png" class="img-fluid" style="width: 150px; height: 75px;" alt="Logo">
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="product.html">Products</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="categoryDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Category</a>
+            <ul class="dropdown-menu" aria-labelledby="categoryDropdown">
+                <li><a class="dropdown-item" href="categoryOne.html">Disposable Vape 1</a></li>
+                <li><a class="dropdown-item" href="categoryTwo.html">Disposable Vape 2</a></li>
+                <li><a class="dropdown-item" href="categoryThree.html">Disposable Vape 3</a></ul>
+            </li>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+
+  <!-- Header Section -->
+  <header class="header">
+    <h1>Welcome to Relx VapeShop</h1>
+    <p class="breadcrumbs">
+        <a href="index.html ">Home</a>
+    </p>
+    <div class="header-content">
+        <h2>Explore the Best Disposable Vapes from Relx</h2>
+        <p>Discover a world of smooth, flavorful experiences with our range of high-quality disposable vapes. Whether you’re new to vaping or a seasoned user, Relx offers a variety of flavors designed to deliver satisfaction in every puff.</p>
+        <a href="premium-vapes.html" class="btn btn-primary">Shop Now</a>
+    </div>
+  </header>
+
+  <!-- New Counter Section -->
+<!-- New Counter Section -->
+<section class="counter container py-5">
+  <div class="row text-center">
+    <div class="col-12 col-md-4 mb-4">
+      <div class="counter-item d-flex flex-column align-items-center">
+        <div class="number" id="counter1">0</div>
+        <p class="mb-0">Products <br> Sold</p>
+      </div>
+    </div>
+    <div class="col-12 col-md-4 mb-4">
+      <div class="counter-item d-flex flex-column align-items-center">
+        <div class="number" id="counter2">0</div>
+        <p class="mb-0">Happy Customers</p>
+      </div>
+    </div>
+    <div class="col-12 col-md-4 mb-4">
+      <div class="counter-item d-flex flex-column align-items-center">
+        <div class="number" id="counter3">0</div>
+        <p class="mb-0">Years in Business</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Feature Section -->
+  <section class="container py-5">
+    <div class="row g-5">
+      <div class="col-lg-4">
+        <div class="feature-item text-center p-3">
+          <i class="fas fa-cogs mb-3"></i>
+          <h5>Premium Vape Hub</h5>
+          <p>"Discover premium products for a smooth vaping experience and enjoy every puff!"</p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="feature-item text-center p-3">
+          <i class="fas fa-check-circle mb-3"></i>
+          <h5>Satisfaction Guaranteed</h5>
+          <p>Every product ensures maximum satisfaction and performance for a unique experience.</p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="feature-item text-center p-3">
+          <i class="fas fa-list-alt mb-3"></i>
+          <h5>Wide Product Range</h5>
+          <p>Choose from a variety of vapes, e-liquids, and accessories for your preferences.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Testimonials Section -->
+  <section class="animated-image-section py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h2 class="text-center text-warning mb-4">Customer Experience at its Best</h2>
+          <p class="text-white text-center mb-4">Our customers love our products! Check out their testimonials and enjoy a glimpse of the smooth experience we offer at VapeShop.</p>
+          <div class="text-center">
+            <a href="product.html" class="btn btn-warning">Shop Now</a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="image-container">
+            <img src="images/vape-customer.jpg" alt="Customer Experience" class="img-fluid image-animate">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="testimonials text-center text-white py-5">
+    <div class="container">
+      <h2 class="mb-4 text-warning">What Our Customers Say</h2>
+      <div class="row g-3">
+        <!-- Testimonial Item 1 -->
+        <div class="col-md-4 d-flex">
+          <div class="testimonial-item p-4 border border-light rounded shadow-sm d-flex flex-column justify-content-between">
+            <p>VapeShop has transformed my vaping experience! Amazing products and incredible customer service."</p>
+            <h5>- Ali Khan</h5>
+            <small>Happy Customer</small>
+          </div>
+        </div>
+        <!-- Testimonial Item 2 -->
+        <div class="col-md-4 d-flex">
+          <div class="testimonial-item p-4 border border-light rounded shadow-sm d-flex flex-column justify-content-between">
+            <p>I highly recommend VapeShop for their premium selection of vapes and accessories. The quality is unmatched!"</p>
+            <h5>- Sana Jamil</h5>
+            <small>Satisfied Client</small>
+          </div>
+        </div>
+        <!-- Testimonial Item 3 -->
+        <div class="col-md-4 d-flex">
+          <div class="testimonial-item p-4 border border-light rounded shadow-sm d-flex flex-column justify-content-between">
+            <p>Quick delivery and exceptional service. The best place to shop for vapes and e-liquids!"</p>
+            <h5>- Imran Ahmed</h5>
+            <small>Long-time Customer</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<!-- Special Offers Section -->
+<section class="offers  text-center text-white py-5">
+  <div class="container">
+    <h2 class="mb-4 text-warning">Limited Time Offers</h2>
+    <div class="row g-5">
+      <!-- First Offer Item -->
+      <div class="col-md-4 d-flex align-items-stretch ">
+        <div class="offer-item p-4 bg-light text-dark w-100">
+          <h4>20% Off on All Products</h4>
+          <p>Get a 20% discount on your first purchase. Use code: VAPE20</p>
+        </div>
+      </div>
+      <!-- Second Offer Item -->
+      <div class="col-md-4 d-flex align-items-stretch">
+        <div class="offer-item p-4 bg-light text-dark w-100">
+          <h4>Buy 2 Get 1 Free</h4>
+          <p>Buy any two vapes and get the third one absolutely free!</p>
+        </div>
+      </div>
+      <!-- Third Offer Item -->
+      <div class="col-md-4 d-flex align-items-stretch">
+        <div class="offer-item p-4 bg-light text-dark w-100">
+          <h4>Free Shipping</h4>
+          <p>Enjoy free shipping on orders over $50</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Why Choose Us Section -->
+<section class="choose-us py-5">
+  <div class="container">
+    <h2 class="text-center text-warning mb-4">Why Choose VapeShop?</h2>
+    <div class="row">
+      <!-- Feature 1 -->
+      <div class="col-md-4 mb-4">
+        <div class=" p-4 text-center text-white rounded">
+          <i class="fas fa-shipping-fast fa-3x mb-3" style="color: #ff6f61;"></i>
+          <h5>Fast Delivery</h5>
+          <p>We guarantee quick and reliable delivery so that you get your products on time, every time!</p>
+        </div>
+      </div>
+      <!-- Feature 2 -->
+      <div class="col-md-4 mb-4">
+        <div class=" p-4 text-center text-white rounded">
+          <i class="fas fa-lock fa-3x mb-3" style="color: #ff6f61;"></i>
+          <h5>Secure Payment</h5>
+          <p>Your privacy is our priority. We offer secure payment options for your peace of mind.</p>
+        </div>
+      </div>
+      <!-- Feature 3 -->
+      <div class="col-md-4 mb-4">
+        <div class=" p-4 text-center text-white rounded">
+          <i class="fas fa-headphones-alt fa-3x mb-3" style="color: #ff6f61;"></i>
+          <h5>24/7 Customer Support</h5>
+          <p>Our team is available round the clock to assist you with any queries or issues.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Vape of the Week Section -->
+<section class="vape-of-the-week py-5">
+  <div class="container text-center">
+    <h2 class="text-warning mb-4">Vape of the Week</h2>
+    <p class="text-white mb-5">Check out our featured vape of the week with special discounts and offers!</p>
+    
+    <!-- Featured Product Card -->
+    <div class="row justify-content-center">
+      <div class="col-md-12">
+        <div class="card text-white" style="background-color:  #121212;">
+          <img src="images/vape-8.jpg" class="card-img-top" alt="Vape of the Week">
+          <div class="card-body">
+            <h5 class="card-title text-warning">Premium Vape Kit</h5>
+            <p class="card-text">A sleek, easy-to-use vape kit with high-performance features, now at a special price!</p>
+            <h5 class="text-warning">$7.99 <span><s>10.99</s></span></h5>
+            <a href="product.html" class="btn btn-warning">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="amazing-promotion text-center text-white py-5" style=" position: relative;">
+  <div class="container">
+    <h2 class="mb-4 display-4 font-weight-bold"> Limited Time Offer </h2>
+    <p class="lead mb-4">Grab our special deal before it’s gone! <strong>30% OFF</strong> on select products. Hurry, the clock is ticking!</p>
+
+    <!-- Countdown Timer -->
+    <div id="countdown" class="mb-4" style="font-size: 32px; font-weight: bold; color: #fff;"></div>
+
+    <a href="product.html" class="btn btn-dark btn-lg mt-4">Shop Now</a>
+  </div>
+
+  <script>
+    // Countdown Timer Functionality
+    function startCountdown(endTime) {
+      const countdownElement = document.getElementById('countdown');
+
+      const interval = setInterval(function() {
+        const now = new Date().getTime();
+        const remainingTime = endTime - now;
+
+        if (remainingTime <= 0) {
+          clearInterval(interval);
+          countdownElement.innerHTML = 'The offer has ended!';
+          return;
+        }
+
+        const hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+
+        countdownElement.innerHTML = `Hurry up! Offer ends in: ${hours}h ${minutes}m ${seconds}s`;
+      }, 1000);
+    }
+
+    const deadline = new Date().getTime() + 3600000; 
+    startCountdown(deadline);
+  </script>
+</section>
+
+  <!-- Footer Section -->
+  <footer class="footer text-center text-white py-4">
+    <div class="container">
+      <div class="social-icons mb-3">
+        <a href="#" class="text-white mx-3" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="text-white mx-3" target="_blank"><i class="fab fa-google"></i></a>
+        <a href="#" class="text-white mx-3" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+      <p>&copy; 2024 VapeShop. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JS Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+    // Counter Functionality
+    function startCounter(id, start, end, duration) {
+      let element = document.getElementById(id);
+      let startTime = new Date().getTime();
+      let interval = setInterval(() => {
+        let elapsedTime = new Date().getTime() - startTime;
+        let progress = Math.min(elapsedTime / duration, 1);
+        element.innerHTML = Math.floor(start + (end - start) * progress);
+        if (progress === 1) clearInterval(interval);
+      }, 10);
+    }
+
+    window.onload = () => {
+      startCounter('counter1', 0, 5000, 3000); // Example for products sold
+      startCounter('counter2', 0, 1000, 3000); // Example for happy customers
+      startCounter('counter3', 0, 5, 3000); // Example for years in business
+    }
+  </script>
+</body>
+</html>

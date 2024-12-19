@@ -1,0 +1,72 @@
+    /* External Css
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+.nav-item .nav-link{
+    color: white;
+}
+.nav-link:hover, 
+.navbar .dropdown-item:hover {
+    border-radius: 50px;
+}
+a
+.navbar .nav-link:hover {
+    border-bottom: 3px solid;   
+    transition: border-bottom 0.3s ease;
+
+}
+.navbar-toggler {
+    box-shadow: none !important;
+}
+.carousel-inner{
+    width: 100px;
+    height: 90vh;
+}
+
+#img{
+    width: 400px;
+    height: 80vh;
+}
+i{
+    font-size: 10px;
+}
+.mapswrapper {
+    background: lightblue;
+    position: relative;
+    height: 300px;
+}
+.mapswrapper iframe {
+    border: 0;
+    position: relative;
+    z-index: 2; 
+}
+.mapswrapper a {
+    color: rgba(0, 0, 0, 0);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.form-control {
+    box-shadow: none !important;
+}
+.feature-item{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.feature-item:hover{
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+.img-fluid{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.img-fluid:hover{
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+#categoriesDropdown{
+    color:white;
+} */
